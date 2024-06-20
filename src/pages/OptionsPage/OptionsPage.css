@@ -1,0 +1,102 @@
+.options-page {
+  display: flex;
+  min-height: 100vh;
+  background-image: radial-gradient(
+    circle,
+    #575656a7,
+    #268ca5,
+    #017a7a,
+    #006868
+  );
+}
+.options-page .options-aside-bar {
+  position: static;
+  background-color: #3032346a;
+}
+.options-page .options-aside-bar > ul {
+  padding: 0px;
+  list-style: none;
+}
+.options-page .options-aside-bar > ul li {
+  display: flex;
+  letter-spacing: 0.1rem;
+  align-items: center;
+  font-size: 1.1em;
+  height: 2.5em;
+  color: white;
+  padding: 0em 1em;
+  font-style: italic;
+  border-bottom: 2px solid white !important;
+}
+.options-page .options-aside-bar > ul li:last-child {
+  border-bottom: none;
+}
+.options-page .options-aside-bar > ul li:hover {
+  cursor: pointer;
+  background-color: #009999;
+}
+.options-page .options-aside-bar > ul > a {
+  white-space: nowrap;
+  color: white !important;
+}
+.options-page .options-page-body {
+  width: 100%;
+  display: flex;
+  padding: 2em 0em;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .options-page {
+    flex-direction: column;
+  }
+  .options-page .options-page-body {
+    order: 2;
+  }
+  .options-page .options-aside-bar {
+    order: 1;
+    height: initial;
+    margin: 1em auto;
+    width: fit-content;
+    background-color: unset;
+  }
+  .options-page .options-aside-bar > ul {
+    display: flex;
+    width: fit-content;
+    margin-bottom: 0rem;
+    padding-left: 0.75rem;
+    flex-direction: column;
+    border-left: 3px solid white;
+    border-bottom-left-radius: 1rem;
+  }
+  .options-page .options-aside-bar > ul li {
+    padding: 0.45em !important;
+    border-bottom: unset !important;
+  }
+  .options-page .options-aside-bar > ul a {
+    overflow: hidden;
+    text-align: center;
+    border-radius: 0.3em;
+    background-color: #3032346a;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border: 2px solid white !important;
+  }
+  .options-page .options-aside-bar > ul a:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@keyframes slideDownIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(-20px);
+    opacity: 0%;
+  }
+}

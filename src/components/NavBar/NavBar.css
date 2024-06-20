@@ -1,0 +1,22 @@
+nav .navbar-brand {
+  padding: 0em !important;
+}
+nav .navbar-brand > img {
+  width: 2.5em;
+  height: 2.5em;
+}
+nav .navbar-nav {
+  margin: auto;
+}
+nav .active-route {
+  color: #00ccff !important;
+}
+nav .dropdown-item:hover,
+nav .nav-link:hover {
+  color: #00ccff !important;
+}
+nav .navbar-toggler:focus,
+nav .navbar-toggler:focus-within {
+  border: 2px solid #115f7376;
+  box-shadow: none;
+}

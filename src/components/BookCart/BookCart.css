@@ -1,0 +1,58 @@
+.book-cart {
+    width: 15em;
+    margin: 0.25em;
+    height: 20em;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.25em;
+    background-color: #0000001f;
+    box-shadow: 0 0 17px #333;
+}
+
+/* CART CARD IMAGE */
+.book-cart>img {
+    width: 100%;
+    height: 20em;
+    filter: brightness(50%);
+}
+
+/* CART CARD COVER */
+.book-cart>.cart-cover {
+    position: absolute;
+    left: 0.5em;
+    top: 80%;
+}
+
+
+/* CART CARD CONTENT HOVER */
+.book-cart>.cart-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.book-cart>.cart-content>section {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+.book-cart>.cart-content>section>.trash-icon {
+    font-size: 2em;
+}
+
+.book-cart>.cart-content>section>.trash-icon:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.book-cart:hover .cart-content {
+    visibility: visible;
+    opacity: 1;
+}

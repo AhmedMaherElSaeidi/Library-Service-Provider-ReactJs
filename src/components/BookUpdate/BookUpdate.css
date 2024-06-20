@@ -1,0 +1,157 @@
+.react-book-update-form {
+  width: 100%;
+}
+/* ERROR SPAN */
+.react-book-update-form .form-control-span {
+  padding: 0.65em;
+}
+.react-book-update-form .form-control-span > span {
+  display: block;
+  font-size: 1.1em;
+  color: #dc3545 !important;
+}
+/* FORM CONTENT */
+.react-book-update-form .form-body {
+  width: 50em;
+  display: flex;
+  overflow: hidden;
+  margin: 1em auto;
+  position: relative;
+  height: fit-content;
+  border-radius: 0.35em;
+  background-color: #3032346a;
+}
+.react-book-update-form .form-body .form-control-submit {
+  margin: 1em auto;
+  margin-bottom: 0em;
+  display: grid;
+  gap: 2;
+}
+/* LEFT CONTENT */
+.react-book-update-form .form-body .form-body-lcontent {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.react-book-update-form .form-body .form-body-lcontent .title-input {
+  position: absolute;
+  top: 74%;
+}
+.react-book-update-form .form-body .form-body-lcontent .author-input {
+  position: absolute;
+  top: 80%;
+}
+.react-book-update-form .form-body .form-body-lcontent .category-select {
+  position: absolute;
+  left: 0%;
+  top: 90%;
+}
+.react-book-update-form .form-body .form-body-lcontent > img {
+  width: 22em;
+  height: 27em;
+  filter: brightness(0.5);
+}
+/* RIGHT CONTENT */
+.react-book-update-form .form-body .form-body-rcontent {
+  width: 100%;
+  padding: 0.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.react-book-update-form .form-body .form-body-rcontent .input-rfield {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+}
+.react-book-update-form .form-body .form-body-rcontent .input-rfield > h5 {
+  margin: 0em;
+  padding: 0.2em 0em;
+  margin-right: 0.45em;
+  text-wrap: nowrap;
+}
+.react-book-update-form .form-body .form-body-rcontent textarea {
+  width: 100% !important;
+  height: 12em !important;
+}
+/* Modifiying Elements UI */
+.react-book-update-form .form-body .border-left {
+  border-left: 1px solid white !important;
+  border-radius: 0rem !important;
+}
+.react-book-update-form .form-body .border-bottom {
+  border-bottom: 1px solid white !important;
+  border-radius: 0rem !important;
+}
+.react-book-update-form .form-body .form-control,
+.react-book-update-form .form-body .form-select {
+  border: unset;
+  font-size: 1.1em;
+  font-weight: bold;
+  background-color: transparent;
+}
+.react-book-update-form .form-body .form-select-custom {
+  border: none;
+  outline: none !important;
+  border: unset;
+  background-color: transparent;
+  padding: 0.35em 0.68201em;
+  border-radius: 0.25em;
+  text-indent: 1px;
+  font-weight: bold;
+  width: 100%;
+}
+.react-book-update-form .form-body .form-select-custom:hover {
+  cursor: pointer;
+}
+.react-book-update-form .form-body .form-control:focus,
+.react-book-update-form .form-body .form-select:focus,
+.react-book-update-form .form-body .form-select-custom:focus,
+.react-book-update-form .form-body .form-check-input:focus {
+  border: unset;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 1100px) {
+  /* FORM CONTENT */
+  .react-book-update-form .form-body {
+    width: 35em;
+  }
+
+  /* LEFT CONTENT */
+  .react-book-update-form .form-body .form-body-lcontent {
+    font-size: 1em;
+  }
+
+  .react-book-update-form .form-body .form-body-lcontent .title-input {
+    top: 72%;
+  }
+
+  .react-book-update-form .form-body .form-body-lcontent > img {
+    height: 25em;
+    width: 18em;
+  }
+
+  /* RIGHT CONTENT */
+  .react-book-update-form .form-body .form-body-rcontent {
+    font-size: 0.9em;
+  }
+
+  .react-book-update-form .form-body .form-body-rcontent textarea {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  /* FORM CONTENT */
+  .react-book-update-form .form-body {
+    width: 18em;
+    flex-direction: column;
+  }
+
+  /* RIGHT CONTENT */
+  .react-book-update-form .form-body .form-body-rcontent textarea {
+    margin-bottom: 0.45em;
+  }
+}

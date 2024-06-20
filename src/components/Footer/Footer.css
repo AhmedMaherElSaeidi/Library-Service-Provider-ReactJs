@@ -1,0 +1,20 @@
+footer .footer-icons>.btn {
+    border: none;
+}
+
+footer .footer-icons>.btn:hover {
+    cursor: pointer;
+    background-color: #2f6c7c !important;
+    color: #00ccff !important;
+    box-shadow: none;
+    border: none;
+}
+
+footer .footer-icons>.btn:focus {
+    box-shadow: unset !important;
+}
+
+footer .footer-icons>.btn:focus-visible {
+    background-color: transparent !important;
+    box-shadow: unset !important;
+}

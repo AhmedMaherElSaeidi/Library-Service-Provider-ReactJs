@@ -1,0 +1,50 @@
+.react-register-form {
+  width: 60% !important;
+}
+.react-register-form input {
+  text-align: center;
+}
+.react-register-form .form-control-heading {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 1em;
+}
+.react-register-form .form-control-input {
+  position: relative;
+  margin-bottom: 0.45em;
+}
+.react-register-form .form-control-input > .form-control-icon {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.5em;
+}
+.react-register-form .form-control-submit {
+  margin: 1em auto;
+  margin-bottom: 0em;
+  display: grid;
+  gap: 2;
+}
+.react-register-form .password-eye-icon {
+  opacity: 40%;
+  position: absolute;
+  top: 0.25em;
+  right: 0.5em;
+}
+.react-register-form .password-eye-icon:hover {
+  cursor: pointer;
+  color: black !important;
+  opacity: 100%;
+}
+.react-register-form .form-control-check > section:first-child {
+  display: flex;
+  align-items: center;
+}
+.react-register-form .form-control-check .form-check {
+  margin-left: 0.65em;
+}
+@media screen and (max-width: 720px) {
+  .react-register-form {
+    width: 80% !important;
+  }
+}

@@ -1,0 +1,26 @@
+.err-modal-container {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+
+.err-modal-container > span {
+  color: white;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: absolute;
+  top: 0.7rem;
+  left: -1.4rem;
+  border-radius: 50%;
+}
+
+.err-modal-container > span:hover {
+  color: #5c0a0a;
+  cursor: pointer;
+  text-shadow: 1px 1px 3px white, 1px 1px 3px white;
+}

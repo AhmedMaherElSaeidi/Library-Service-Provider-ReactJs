@@ -1,0 +1,13 @@
+.about-row-component .about-p {
+    font-size: 1.1em;
+}
+
+.about-row-component .text-wheat {
+    color: #fff1d0;
+}
+
+@media screen and (max-width: 560px) {
+    .about-row-component .about-p {
+        font-size: 1em;
+    }
+}

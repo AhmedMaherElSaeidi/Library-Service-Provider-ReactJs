@@ -1,0 +1,28 @@
+.input-control-form {
+    display: flex;
+    align-items: center;
+}
+
+.input-control-form input {
+    border: unset;
+    color: white;
+    text-align: start;
+    background-color: transparent;
+}
+
+.input-control-form input:focus,
+.input-control-form input:focus-visible {
+    color: white;
+    border: unset;
+    box-shadow: unset;
+    background-color: transparent;
+}
+
+.input-control-form .form-control-input {
+    margin-right: .35em;
+}
+
+.input-control-form .form-control-submit > button {
+    border: unset;
+    background: transparent;
+}

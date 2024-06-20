@@ -1,0 +1,27 @@
+@import url("./assets/theme/solar.min.css");
+
+body {
+  background-color: white !important;
+}
+.text-gold {
+  color: gold !important;
+}
+.text-teal {
+  color: #009999 !important;
+}
+.bg-teal {
+  background-color: #009999 !important;
+}
+.text-lightblue {
+  color: #37c6ea !important;
+}
+.small-text {
+  font-size: 0.8em;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: white;
+}

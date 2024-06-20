@@ -1,0 +1,21 @@
+.books-page {
+  background-image: radial-gradient(
+    circle,
+    #575656a7,
+    #268ca5,
+    #017a7a,
+    #006868
+  );
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.books-page .book-card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.75em 0em;
+}

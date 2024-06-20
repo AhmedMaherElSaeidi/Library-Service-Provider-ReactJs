@@ -1,0 +1,83 @@
+.form-search {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.form-search .input-field {
+  height: 2.75rem;
+  width: 100%;
+  position: relative;
+}
+.form-search .input-field input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  background: #fff;
+  display: block;
+  width: 100%;
+  padding: 10px 32px 10px 70px;
+  font-size: 18px;
+  color: #666;
+  border-radius: 34px;
+}
+.form-search .input-field input.placeholder {
+  color: #ccc;
+  font-size: 18px;
+}
+.form-search .input-field input:-moz-placeholder {
+  color: #ccc;
+  font-size: 18px;
+}
+.form-search .input-field input::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 18px;
+}
+.form-search .input-field input:hover,
+.form-search .input-field input:focus {
+  box-shadow: none;
+  outline: 0;
+}
+.form-search .input-field .btn-search {
+  width: 70px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+.form-search .input-field .btn-search .btn-search-icon {
+  color: #ccc;
+  width: 25px;
+  height: 25px;
+  transition: all 0.2s ease-out, color 0.2s ease-out;
+}
+.form-search .input-field:hover .btn-search .btn-search-icon,
+.form-search .input-field:hover .btn-search .btn-search-icon {
+  color: #37c6ea !important;
+}
+
+@media screen and (max-width: 767px) {
+  .form-search .input-field {
+    margin-bottom: 20px;
+    height: 2.25rem;
+    height: 50px;
+  }
+  .form-search .input-field input {
+    padding-left: 55px;
+    font-size: 16px;
+  }
+  .form-search .input-field .btn-search .btn-search-icon {
+    width: 21px;
+    height: 21px;
+  }
+}

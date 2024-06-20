@@ -1,0 +1,46 @@
+.form-container-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.form-container-header .library-logo {
+  width: 6em;
+  height: 6em;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+.form-container-body {
+  margin: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container-body > form {
+  background-color: #07364287;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  box-shadow: 0 0 0 0.1rem #aeefff87 !important;
+}
+.form-container-body > form input {
+  background-color: white;
+}
+.form-container-body a:hover {
+  text-decoration: none;
+  opacity: 80%;
+}
+.form-container-body .form-check-input:checked {
+  background-color: #0fbfeb !important;
+  border-color: #0fbfeb !important;
+}
+.form-container-body .form-control:focus,
+.form-container-body .form-select:focus,
+.form-container-body .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem #aeefff87 !important;
+  background-color: white;
+}
+@media screen and (max-width: 720px) {
+  .form-container-header .library-logo {
+    width: 4em;
+    height: 4em;
+  }
+}

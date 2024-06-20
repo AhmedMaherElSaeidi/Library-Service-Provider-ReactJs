@@ -1,0 +1,12 @@
+.insufficient-view > section {
+    margin: 20em 0em;
+    display: none;
+}
+
+
+@media screen and (max-width: 960px) {
+    .insufficient-view > section {
+        display: initial;
+    }
+    
+}

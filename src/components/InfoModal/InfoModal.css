@@ -1,0 +1,27 @@
+.info-modal-container {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+}
+
+.info-modal-container > span {
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border-radius: 50%;
+}
+
+.info-modal-container > span > svg {
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.info-modal-container > span:hover > svg {
+  color: red;
+  cursor: pointer;
+}

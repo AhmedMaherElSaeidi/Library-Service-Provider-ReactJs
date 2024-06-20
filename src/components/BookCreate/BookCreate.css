@@ -1,0 +1,109 @@
+.book-creation-container {
+  width: 40em;
+  padding: 1.5em;
+  overflow: hidden;
+  height: fit-content;
+  border-radius: 0.5em;
+  background-color: #3032346a;
+  box-shadow: 0 0 0 0.1rem #009999 !important;
+  -webkit-animation: slideDownIn 0.5s linear both;
+  animation: slideDownIn 0.5s linear both;
+}
+
+.book-creation-container > .book-creation-heading {
+  padding: 0.45em;
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.15em;
+  margin-bottom: 1em;
+}
+
+.book-creation-container > .book-creation-body {
+  display: flex;
+}
+
+.book-creation-container > .book-creation-body > .creation-body-form {
+  width: 25em;
+  margin-right: 0.65em;
+}
+
+.book-creation-container > .book-creation-body > .creation-body-img > img {
+  height: 18em;
+  width: 12em;
+  border-radius: 0.2em;
+  border: 1px solid #aeefff87;
+}
+
+.react-book-form .form-control-input > input,
+.react-book-form .form-control-select > select,
+.react-book-form .form-control-textarea > textarea {
+  text-align: start;
+  background-color: white;
+}
+
+.react-book-form .form-control-input > span,
+.react-book-form .form-control-select > span,
+.react-book-form .form-control-textarea > span {
+  color: #dc3545 !important;
+}
+
+.react-book-form .form-control-submit {
+  margin: 1em auto;
+  margin-bottom: 0em;
+  display: grid;
+  gap: 2;
+}
+
+@media screen and (max-width: 720px) {
+  .book-creation-container {
+    width: 30em;
+  }
+
+  .book-creation-container > .book-creation-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-creation-container .creation-body-img {
+    order: -1;
+    margin-bottom: 0.65em;
+  }
+
+  .book-creation-container .creation-body-img > img {
+    height: 15em !important;
+    width: 15em !important;
+    border-radius: 100% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .book-creation-container {
+    width: 90%;
+  }
+
+  .book-creation-container > .book-creation-heading {
+    letter-spacing: 0.05em;
+  }
+
+  .book-creation-container > .book-creation-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-creation-container > .book-creation-body > .creation-body-form {
+    width: 100% !important;
+  }
+
+  .book-creation-container .creation-body-img {
+    order: -1;
+    margin-bottom: 0.65em;
+  }
+
+  .book-creation-container .creation-body-img > img {
+    height: 10em !important;
+    width: 10em !important;
+    border-radius: 100% !important;
+  }
+}

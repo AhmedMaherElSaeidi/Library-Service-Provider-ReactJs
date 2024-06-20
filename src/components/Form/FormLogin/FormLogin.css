@@ -1,0 +1,43 @@
+.react-login-form {
+  width: 60% !important;
+}
+.react-login-form input {
+  text-align: center;
+}
+.react-login-form .form-control-heading {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 1em;
+}
+.react-login-form .form-control-input {
+  position: relative;
+  margin-bottom: 0.35em;
+}
+.react-login-form .form-control-input > .form-control-icon {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.5em;
+}
+.react-login-form .form-control-submit {
+  margin: 1em auto;
+  margin-bottom: 0em;
+  display: grid;
+  gap: 2;
+}
+.react-login-form .password-eye-icon {
+  opacity: 40%;
+  position: absolute;
+  top: 0.25em;
+  right: 0.5em;
+}
+.react-login-form .password-eye-icon:hover {
+  cursor: pointer;
+  color: black !important;
+  opacity: 100%;
+}
+@media screen and (max-width: 720px) {
+  .react-login-form {
+    width: 80% !important;
+  }
+}

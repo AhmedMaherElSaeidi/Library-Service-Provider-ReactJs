@@ -1,0 +1,116 @@
+.about-page-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/src/assets/images/AboutBKG.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(90%);
+  min-height: 100vh;
+  padding: 1em;
+  color: white;
+}
+
+.about-page-container .about-page {
+  margin: auto;
+  background-color: #07364287;
+  border-radius: 0.25em;
+  padding: 1em;
+  width: 90%;
+}
+
+.about-page-container .about-page > .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+
+/* HEADING */
+.about-page-container .about-heading {
+  font-size: 5em;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  margin: 0em;
+}
+
+.about-page-container .about-heading + p {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.35em;
+  margin: 0em;
+}
+
+.about-page-container .about-p {
+  font-size: 1.1em;
+}
+
+.about-page-container .text-wheat {
+  color: #fff1d0;
+}
+
+/* ABOUT IMAGE */
+.about-page-container .about-content > .about-image {
+  margin-left: 1.25em;
+}
+
+.about-page-container .about-content > .about-image > img {
+  width: 25em;
+  height: 40em;
+  border-radius: 0.25em;
+}
+
+/* ABOUT TEXT */
+.about-page-container .about-content > .about-text {
+  width: 60%;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-page-container .about-page > .about-content {
+    justify-content: center !important;
+  }
+
+  /* ABOUT IMAGE */
+  .about-page-container .about-content > .about-image {
+    margin-top: 1em;
+  }
+
+  .about-page-container .about-content > .about-image > img {
+    width: 20em;
+    height: 20em;
+  }
+
+  /* ABOUT TEXT */
+  .about-page-container .about-content > .about-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .about-page-container .about-page > .about-content {
+    justify-content: center !important;
+  }
+
+  /* HEADING */
+  .about-page-container .about-heading {
+    font-size: 2em;
+  }
+
+  .about-page-container .about-heading + p {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.35em;
+    margin: 0em;
+  }
+
+  .about-page-container .about-p {
+    font-size: 1em;
+  }
+
+  /* ABOUT IMAGE */
+  .about-page-container .about-content > .about-image > img {
+    width: 12em;
+    height: 12em;
+  }
+}

@@ -1,0 +1,82 @@
+.book-model {
+  width: 15em;
+  margin: 0.25em;
+  height: 23em;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.25em;
+  background-color: #0000001f;
+  box-shadow: 0 0 17px #333;
+}
+
+/* MODEL IMAGE */
+.book-model > img {
+  width: 100%;
+  height: 23em;
+  filter: brightness(90%);
+}
+
+/* MODEL COVER */
+.book-model > .model-cover {
+  position: absolute;
+  left: 1em;
+  top: 70%;
+}
+
+/* MODEL ICONS */
+.book-model > span {
+  opacity: 20%;
+  font-size: 1.25em;
+}
+
+.book-model > span:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.book-model > .edit-icon {
+  position: absolute;
+  top: 90%;
+  right: 1.5em;
+}
+
+.book-model > .trash-icon {
+  position: absolute;
+  top: 90%;
+  right: 0.35em;
+}
+
+/* MODEL CONTENT HOVER */
+.book-model > .model-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.book-model > .model-content > .model-content-heading {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.book-model > .model-content > .model-content-icons {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+.book-model > .model-content .content-icon:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.book-model:hover .model-content {
+  visibility: visible;
+  opacity: 1;
+}

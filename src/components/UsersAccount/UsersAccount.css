@@ -1,0 +1,51 @@
+.users-account {
+  animation: slideDownIn 0.5s linear both;
+  -webkit-animation: slideDownIn 0.5s linear both;
+}
+.users-account .user-account {
+  position: relative;
+  padding: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: #0000003b;
+}
+.users-account .user-account .title {
+  color: silver;
+  font-size: 1.1rem;
+}
+.users-account .user-account .value {
+  color: white !important;
+}
+.users-account .user-account .user-account-options {
+  position: absolute;
+  bottom: -1rem;
+  left: 2rem;
+}
+.users-account .user-account .user-account-options > span {
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000b0;
+}
+.users-account .user-account .user-account-options > span:hover svg {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 420px) {
+  .users-account .user-account .title {
+    font-size: 1rem;
+  }
+  .users-account .user-account .value,
+  .users-account .user-account .user-account-options > span {
+    font-size: 0.8rem;
+  }
+}
