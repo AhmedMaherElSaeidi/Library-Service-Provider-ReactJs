@@ -15,6 +15,7 @@ import BookCreate from "./components/BookCreate/BookCreate";
 import BookUpdate from "./components/BookUpdate/BookUpdate";
 import UsersAccount from "./components/UsersAccount/UsersAccount";
 import BorrowRequests from "./components/BorrowRequests/BorrowRequests";
+import LoggedInGuard from "./guards/LoggedInGuard";
 
 const router = createHashRouter([
   {
@@ -34,8 +35,13 @@ const router = createHashRouter([
         element: <BooksPage />,
       },
       {
-        path: "/pages/home/book/:id",
-        element: <BookDetail />,
+        element: <LoggedInGuard />,
+        children: [
+          {
+            path: "/pages/home/book/:id",
+            element: <BookDetail />,
+          },
+        ],
       },
       {
         element: <AuthGuard role="normal" />,
